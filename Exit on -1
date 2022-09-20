@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"Enter the numbers : ";
+	int ps=0,ns=0,pn=0,nn=0,q,i=1,pa,na;
+	while(i>0)
+	{
+		cin>>q;
+		if(q==-1)
+		{
+			i=0;
+		}
+		else
+		{
+			if(q<0)
+			{
+				ns+=q;
+				nn++;
+			}
+			else
+			{
+				ps+=q;
+				pn++;
+			}
+			i++;
+		}
+	}
+	na=ns/nn;
+	cout<<"Average of negative numbers is : "<<na;
+	pa=ps/pn;
+	cout<<"Average of positive numbers is : "<<pa;
+}
