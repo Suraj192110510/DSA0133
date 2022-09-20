@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a1,a2,a=0;
+	cout<<"Enter the beginning value : ";
+	cin>>a1;
+	cout<<"Enter the ending value : ";
+	cin>>a2;
+	cout<<"The list of composite numbers between"<<a1<<" and"<<a2<<" are :";
+	for(int i=(a1+1);i<=a2;i++)
+	{
+		for(int j=2;j<i;j++)
+		{
+			if(i%j==0)
+			a++;
+		}
+		if(a!=0)
+		{
+			cout<<i;
+			a=0;
+		}
+		else
+		a=0;	
+	}return 0;
+}
