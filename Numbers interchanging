@@ -10,6 +10,6 @@ int main()
 	q3=q1;
 	q1=q2;
 	q2=q3;
-	cout<<"Value of q1 after swapping is : "<<q1;
+	cout<<"Value of q1 after swapping is : "<<q1<<endl;
 	cout<<"Value of q2 after swapping is : "<<q2;
 }
