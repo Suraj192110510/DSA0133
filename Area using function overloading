@@ -1,0 +1,42 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+class Area
+{
+	float a;
+	float area(float r)
+	{
+		cout<<"Radius of the circle is : ";
+		cin>>r;
+		a=3.14*r*r;
+		cout<<"Area of circle is : "<<a;
+	}
+	float area(float l,float b)
+	{
+		cout<<"length of rectangle : ";
+		cin>>l;
+		cout<<"breadth of rectangle : ";
+		cin>>b;
+		a=l*b;
+		cout<<"Area of rectangle is : "<<a;
+	}
+	float area(float si,float be,float re)
+	{
+		cout<<"side of square : ";
+		cin>>si;
+		a=si*si;
+		cout<<"Area of square is : "<<a;
+	}
+	float area(float he,float b, float n ,float de)
+	{
+		cout<<"height of triangle : ";
+		cin>>he;
+		cout<<"base of triangle : ";
+		cin>>b;
+		a=0.5*he*b;
+		cout<<"Area of triangle is : "<<a;
+	}
+};
+int main()
+{
+}
